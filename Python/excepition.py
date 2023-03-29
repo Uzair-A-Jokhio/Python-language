@@ -10,7 +10,7 @@ def get_int(prompt):
         try:
             x = int(input(prompt))
         except ValueError:
-            print("value not an intgear!")
+            print("ERROR; not an intgear!")
         else:
             return x 
 
