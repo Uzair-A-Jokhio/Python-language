@@ -14,5 +14,3 @@ def get_int(prompt):
         else:
             return x 
 
-
-main()
