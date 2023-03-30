@@ -11,7 +11,4 @@ def shuffles():
     for card in cards:
         print(card)
 
-import sys
-
-def sys_argv():
-    print("hello my name is ", sys.argv[0])
+shuffles()
