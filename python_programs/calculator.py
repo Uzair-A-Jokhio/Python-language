@@ -1,23 +1,24 @@
-print("Your are Using A Basic Calculator")  # introduction
-num1 = float(input("Enter First number:"))   # first input
+print("Your are Using A Basic Calculator")  
+
+# introduction
+num1 = float(input("Enter First number: "))   # first input
 op = input("Enter a Operator:")  # operations
-num2 = float(input("Enter Second number:"))
+num2 = float(input("Enter Second number: "))  
+ 
 # these are the operation
 if op == "+":
-    print("YOUR ANSWER")
-    print(num1 + num2)
-    print("Thanks for using the first calculator ")
+    result = num1 + num2
 elif op == "*":
-    print("YOUR ANSWER")
-    print(num1 * num2)
-    print("Thanks for using the first calculator ")
+    result = num1 * num2
 elif op == "-":
-    print("YOUR ANSWER")
-    print(num1 - num2)
-    print("Thanks for using the first calculator ")
+    result = num1 - num2
 elif op == "/":
-    print("YOUR ANSWER")
-    print(num1 / num2)
-    print("Thanks for using the first calculator  ")
+    result = num1 / num2
 else:
-    print("MAN THIS IS A BASIC CALCULATOR NOT A SUPER COMPUTER TAKE IT EASY!!!")
+    print("Error Invalid Operator")
+
+if op in ["-","+","/","*"]:
+    print(f"{num1} {op} {num2} = {result}")
+else:
+    print("-----------------------------")
+
