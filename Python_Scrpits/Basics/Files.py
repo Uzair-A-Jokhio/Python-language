@@ -1,20 +1,9 @@
-guest = open("guest.txt","w")
-guest_list = [ "uzair", "zain", "anas", "rimsha" ]
+story1 = "--Darkness my old Friend--- \n this is a short story written \n by those whom lost the way \n in the wilderness in the Dark Forest "
 
-for i in guest_list:
-    guest.write(i + "\n")
-
-guest.close()
-
-new_list = ["arif", "sainya", "ali"]
-
-with open("guest.txt", "a") as guest:
-    for i in new_list:
-        guest.write(i + "\n")
-
-guest.close()
-
-with open("guest.txt") as guest:
-    for line in guest:
-        print(line.strip())
-
+try:
+    with open("Files/newfile", "w") as file:
+        file.writelines(story1)
+except FileNotFoundError as e:
+    print("Error", e)
+except Exception as e:
+    print("ERROR", e)
