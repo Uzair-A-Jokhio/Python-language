@@ -1,16 +1,11 @@
-def main():
-    y = get_int("what is y? ")
-    print(f"y is {y}")
+def divide(a,b):
+    return a / b
 
-
-
-
-def get_int(prompt):
-    while True:
-        try:
-            x = int(input(prompt))
-        except ValueError:
-            print("ERROR; not an intgear!")
-        else:
-            return x 
+try:
+    divide(2,0)
+except ZeroDivisionError as e:
+    print(e, "we cannot divide by zero")
+    print(e.__class__)
+except Exception as e:
+    print(e, "Something went wrong")
 
