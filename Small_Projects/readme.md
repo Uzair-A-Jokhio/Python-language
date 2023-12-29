@@ -1,4 +1,4 @@
-# Project Title
+# Small Projects
 
 This project consists of three Python scripts that perform various tasks:
 
