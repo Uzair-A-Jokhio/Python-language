@@ -17,5 +17,3 @@ def test_push_peek():
     assert c1.peek() == 5
     assert c1.is_empty() is False
     
-
-
