@@ -1,7 +1,8 @@
 
 
-#string[start:stop:step]
+#String_name[startparameter:stopparameter:stepparameter]  
 
+#slice function
 name = "Jungshahi"
 reversed_name = name[::-1]
 
