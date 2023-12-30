@@ -1,11 +1,16 @@
-import sys 
-from Small_Projects import new_id
+class A:
+   def a(self):
+       return "Function inside A"
 
+class B:
+   def a(self):
+       return "Function inside B"
 
-# location = sys.path
+class C:
+   pass
 
-# for i in location:
-#     print(i)
+class D(C, A, B):
+   pass
 
-
-print(new_id.name_ask())
+d = D()
+print(d.a())
