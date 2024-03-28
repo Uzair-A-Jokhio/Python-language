@@ -1,16 +1,13 @@
-class A:
-   def a(self):
-       return "Function inside A"
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+    if year % 4 == 0:
+        if year % 100 != 0 or year % 400 == 0:
+            leap = True
+    
+    
+    return leap
 
-class B:
-   def a(self):
-       return "Function inside B"
-
-class C:
-   pass
-
-class D(C, A, B):
-   pass
-
-d = D()
-print(d.a())
+year = int(input())
+print(is_leap(year))
